@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Prototipe formulir laporan kejadian yang responsif.">
+  <title>Ruang Lapor — Formulir Kejadian</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="Ruang Lapor beranda">
+      <span class="brand-mark" aria-hidden="true">RL</span>
+      <span>Ruang Lapor<small>Formulir kejadian</small></span>
+    </a>
+    <span class="demo-label">PROTOTIPE</span>
+  </header>
+
+  <main class="page">
+    <section class="intro">
+      <p class="eyebrow">RUANG AMAN UNTUK BERCERITA</p>
+      <h1>Laporkan kejadian dengan terstruktur.</h1>
+      <p class="intro-copy">Isi informasi yang kamu ketahui. Kamu tidak harus mengisi hal yang tidak diketahui atau membuat dugaan tentang siapa yang bertanggung jawab.</p>
+    </section>
+
+    <aside class="notice" role="note">
+      <span class="notice-icon" aria-hidden="true">!</span>
+      <div>
+        <strong>Penting — ini masih prototipe sekolah</strong>
+        <p>Email tujuan sementara belum diverifikasi sebagai kanal resmi. Jangan masukkan informasi sangat sensitif atau bukti pribadi sungguhan ke prototipe ini. Tombol kirim hanya membuka aplikasi email; laporan belum terkirim sampai kamu menekan tombol kirim di aplikasi email.</p>
+      </div>
+    </aside>
+
+    <form id="reportForm" class="report-card">
+      <div class="section-heading">
+        <span class="step">01</span>
+        <div><h2>Klasifikasi kejadian</h2><p>Pilih kategori yang paling sesuai.</p></div>
+      </div>
+
+      <div class="field">
+        <label for="category">Jenis kejadian <span class="required">*</span></label>
+        <select id="category" name="category" required>
+          <option value="">Pilih klasifikasi</option>
+          <option>Perundungan / bullying</option>
+          <option>Kekerasan dalam rumah tangga (KDRT)</option>
+          <option>Kekerasan seksual</option>
+          <option>Kekerasan fisik</option>
+          <option>Ancaman atau intimidasi</option>
+          <option>Pelecehan nonseksual</option>
+          <option>Penipuan</option>
+          <option>Pencurian</option>
+          <option>Perusakan barang</option>
+          <option>Perundungan siber / cyberbullying</option>
+          <option>Kejadian lalu lintas</option>
+          <option>Orang hilang / perlu ditemukan</option>
+          <option>Gangguan keamanan lainnya</option>
+          <option>Lainnya</option>
+        </select>
+      </div>
+
+      <div class="field" id="otherCategoryWrap" hidden>
+        <label for="otherCategory">Kategori lainnya</label>
+        <input id="otherCategory" name="otherCategory" maxlength="100" placeholder="Tuliskan kategori secara singkat">
+      </div>
+
+      <div class="field">
+        <label for="urgency">Kondisi saat ini <span class="required">*</span></label>
+        <select id="urgency" name="urgency" required>
+          <option value="">Pilih kondisi</option>
+          <option>Sudah terjadi dan saat ini tidak sedang berlangsung</option>
+          <option>Masih berulang, tetapi tidak sedang terjadi saat ini</option>
+          <option>Masih berlangsung / ada bahaya saat ini</option>
+          <option>Tidak yakin</option>
+        </select>
+        <p class="hint">Jika ada bahaya langsung, cari tempat aman dan hubungi layanan darurat atau pihak tepercaya setempat. Jangan menunggu balasan email.</p>
+      </div>
+
+      <div class="section-heading section-gap">
+        <span class="step">02</span>
+        <div><h2>Waktu dan lokasi</h2><p>Masukkan perkiraan jika tidak mengetahui secara pasti.</p></div>
+      </div>
+
+      <div class="grid-two">
+        <div class="field">
+          <label for="eventDate">Tanggal kejadian</label>
+          <input id="eventDate" name="eventDate" type="date">
+        </div>
+        <div class="field">
+          <label for="eventTime">Perkiraan waktu</label>
+          <input id="eventTime" name="eventTime" type="time">
+        </div>
+      </div>
+      <div class="field">
+        <label for="location">Lokasi kejadian <span class="required">*</span></label>
+        <input id="location" name="location" maxlength="250" required placeholder="Contoh: area umum, kecamatan/kota">
+        <p class="hint">Jangan cantumkan alamat rumah pribadi yang tidak diperlukan.</p>
+      </div>
+
+      <div class="section-heading section-gap">
+        <span class="step">03</span>
+        <div><h2>Rincian laporan</h2><p>Ceritakan apa yang kamu ketahui dengan bahasa sendiri.</p></div>
+      </div>
+
+      <div class="field">
+        <label for="chronology">Kronologi kejadian <span class="required">*</span></label>
+        <textarea id="chronology" name="chronology" required minlength="10" maxlength="4000" rows="6" placeholder="Apa yang terjadi? Kapan? Apa yang kamu lihat atau alami? Bedakan hal yang kamu ketahui langsung dari hal yang kamu dengar dari orang lain."></textarea>
+        <div class="field-foot"><span class="hint">Minimal 10 karakter. Jangan menuliskan detail eksplisit yang tidak diperlukan.</span><span id="charCount" class="counter">0/4000</span></div>
+      </div>
+
+      <div class="field">
+        <label for="people">Pihak yang terlibat (opsional)</label>
+        <textarea id="people" name="people" maxlength="1000" rows="3" placeholder="Tulis keterangan seperlunya jika diketahui. Hindari menebak atau menyebarkan data pribadi."></textarea>
+      </div>
+
+      <div class="field">
+        <label for="witness">Saksi atau informasi pendukung (opsional)</label>
+        <textarea id="witness" name="witness" maxlength="1000" rows="3" placeholder="Misalnya ada saksi atau tempat yang mungkin memiliki rekaman. Jangan unggah atau bagikan bukti sensitif melalui prototipe ini."></textarea>
+      </div>
+
+      <div class="section-heading section-gap">
+        <span class="step">04</span>
+        <div><h2>Identitas pelapor</h2><p>Nama tidak wajib diisi pada prototipe ini.</p></div>
+      </div>
+
+      <label class="check-row" for="anonymous">
+        <input id="anonymous" name="anonymous" type="checkbox" checked>
+        <span><strong>Saya ingin mengirim secara anonim</strong><small>Nama dan kontak pelapor tidak dimasukkan ke draf email.</small></span>
+      </label>
+
+      <div id="identityFields" class="identity-fields" hidden>
+        <div class="field">
+          <label for="reporterName">Nama (opsional)</label>
+          <input id="reporterName" name="reporterName" maxlength="100" autocomplete="name" placeholder="Nama pelapor">
+        </div>
+        <div class="field">
+          <label for="reporterContact">Kontak untuk dihubungi (opsional)</label>
+          <input id="reporterContact" name="reporterContact" maxlength="150" autocomplete="off" placeholder="Email atau nomor kontak">
+          <p class="hint">Isi hanya jika aman dan kamu memang ingin dihubungi kembali.</p>
+        </div>
+      </div>
+
+      <div class="privacy-box">
+        <strong>Periksa sebelum melanjutkan</strong>
+        <p>Data formulir tidak disimpan oleh halaman ini. Saat kamu memilih membuka email, isi laporan akan dimasukkan ke draf email pada perangkatmu. Aplikasi email, penyedia email, dan penerima dapat memproses atau menyimpan isinya.</p>
+        <label class="check-row consent" for="understand">
+          <input id="understand" name="understand" type="checkbox" required>
+          <span>Saya memahami bahwa ini prototipe, alamat tujuan belum diverifikasi, dan saya akan memeriksa draf sebelum mengirim.</span>
+        </label>
+      </div>
+
+      <div class="actions">
+        <button type="reset" class="button secondary">Kosongkan formulir</button>
+        <button type="submit" class="button primary">Tinjau &amp; buka email <span aria-hidden="true">→</span></button>
+      </div>
+      <p id="statusMessage" class="status-message" role="status" aria-live="polite"></p>
+    </form>
+
+    <footer class="footer">
+      <p>Ruang Lapor · Prototipe edukasi, bukan layanan resmi atau layanan darurat.</p>
+      <p>Untuk penggunaan nyata, verifikasi kanal penerima dan siapkan perlindungan data serta prosedur penanganan laporan.</p>
+    </footer>
+  </main>
+</body>
+</html>
