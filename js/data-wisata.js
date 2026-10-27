@@ -2,37 +2,45 @@ const DAFTAR_WISATA = [
   {
     id: "alun-alun-malang",
     nama: "Alun-Alun Malang",
-    lokasi: "Kota Malang",
+    lokasi: "Kota Malang, Jawa Timur",
     kategori: "Kota",
-    gambar: "assets/images/alun-alun-malang.jpg",
-    ringkasan: "Ruang terbuka di pusat kota untuk bersantai dan menikmati suasana Malang.",
-    deskripsi: "Tambahkan informasi resmi mengenai fasilitas, akses, dan aturan berkunjung sebelum website dipublikasikan.",
-    alamat: "Alun-Alun Merdeka, Kota Malang",
-    maps: "https://www.google.com/maps/search/?api=1&query=Alun-Alun+Merdeka+Malang",
-    galeri: []
+
+    // Foto yang tampil pada kartu beranda
+    gambar: "aset/alun-alun-malang.jpg",
+
+    // Deskripsi singkat untuk kartu beranda
+    ringkasan:
+      "Ruang terbuka di pusat kota untuk bersantai dan menikmati suasana Malang.",
+
+    // Halaman HTML detail wisata
+    detailUrl: "wisata/alun-alun-malang.html"
   },
+
   {
     id: "jawa-timur-park",
     nama: "Jawa Timur Park",
-    lokasi: "Kota Batu",
+    lokasi: "Kota Batu, Jawa Timur",
     kategori: "Taman Rekreasi",
-    gambar: "assets/images/jawa-timur-park.jpg",
-    ringkasan: "Referensi awal untuk mencari destinasi rekreasi di kawasan Batu.",
-    deskripsi: "Pastikan kamu mencantumkan nama cabang yang tepat, misalnya Jatim Park 1, Jatim Park 2, atau Jatim Park 3, beserta informasi kunjungan yang telah diverifikasi.",
-    alamat: "Kota Batu, Jawa Timur",
-    maps: "https://www.google.com/maps/search/?api=1&query=Jawa+Timur+Park+Batu",
-    galeri: []
+
+    gambar: "aset/jawa-timur-park.jpg",
+
+    ringkasan:
+      "Referensi destinasi rekreasi untuk mencari aktivitas menarik di kawasan Batu.",
+
+    detailUrl: "wisata/jawa-timur-park.html"
   },
+
   {
     id: "pantai-balekambang",
     nama: "Pantai Balekambang",
-    lokasi: "Kabupaten Malang",
+    lokasi: "Kabupaten Malang, Jawa Timur",
     kategori: "Pantai",
-    gambar: "assets/images/pantai-balekambang.jpg",
-    ringkasan: "Destinasi pantai di pesisir selatan Kabupaten Malang.",
-    deskripsi: "Tambahkan informasi akses, kondisi pantai, fasilitas, dan imbauan keselamatan berdasarkan sumber tepercaya.",
-    alamat: "Kawasan Pantai Balekambang, Kabupaten Malang",
-    maps: "https://www.google.com/maps/search/?api=1&query=Pantai+Balekambang+Malang",
-    galeri: []
+
+    gambar: "aset/pantai-balekambang.jpg",
+
+    ringkasan:
+      "Destinasi pantai di pesisir selatan Kabupaten Malang.",
+
+    detailUrl: "wisata/pantai-balekambang.html"
   }
 ];
