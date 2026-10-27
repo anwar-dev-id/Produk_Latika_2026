@@ -17,30 +17,40 @@ const DAFTAR_WISATA = [
   },
 
   {
-    id: "jawa-timur-park",
-    nama: "Jawa Timur Park",
-    lokasi: "Kota Batu, Jawa Timur",
+    id: "jatim-park-1",
+    nama: "Jatim Park 1",
+    lokasi: "Kota Batu",
     kategori: "Taman Rekreasi",
-
-    gambar: "aset/jawa-timur-park.jpg",
-
-    ringkasan:
-      "Referensi destinasi rekreasi untuk mencari aktivitas menarik di kawasan Batu.",
-
-    detailUrl: "wisata/jawa-timur-park.html"
+    gambar: "aset/jatim-park-1.jpg",
+    ringkasan: "Taman rekreasi yang memadukan wahana permainan, hiburan, dan pembelajaran.",
+    detailUrl: "wisata/jatim-park-1.html"
   },
-
+  {
+    id: "jatim-park-2",
+    nama: "Jatim Park 2",
+    lokasi: "Kota Batu",
+    kategori: "Satwa dan Edukasi",
+    gambar: "aset/jatim-park-2.jpg",
+    ringkasan: "Destinasi wisata satwa dan edukasi yang terkenal dengan Batu Secret Zoo dan Museum Satwa.",
+    detailUrl: "wisata/jatim-park-2.html"
+  },
+  
+  {
+    id: "jatim-park-3",
+    nama: "Jatim Park 3",
+    lokasi: "Kota Batu",
+    kategori: "Taman Rekreasi",
+    gambar: "aset/jatim-park-3.jpg",
+    ringkasan: "Tempat rekreasi bertema dinosaurus, hiburan, dan berbagai atraksi keluarga.",
+    detailUrl: "wisata/jatim-park-3.html"
+  },
   {
     id: "pantai-balekambang",
     nama: "Pantai Balekambang",
-    lokasi: "Kabupaten Malang, Jawa Timur",
+    lokasi: "Kabupaten Malang",
     kategori: "Pantai",
-
     gambar: "aset/pantai-balekambang.jpg",
-
-    ringkasan:
-      "Destinasi pantai di pesisir selatan Kabupaten Malang.",
-
+    ringkasan: "Pantai di pesisir selatan Malang yang dikenal dengan pemandangan laut dan pulau kecil di dekat pantai.",
     detailUrl: "wisata/pantai-balekambang.html"
   }
 ];
