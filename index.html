@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Temukan tempat wisata dan aktivitas menarik di Malang Raya.">
+  <title>AmanDolanan — Jelajahi Malang</title>
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/home.css">
+  <script src="js/data-wisata.js" defer></script>
+  <script src="js/beranda.js" defer></script>
+</head>
+<body data-page="home">
+  <header class="site-header">
+    <a class="brand" href="index.html">AmanDolanan<span>.</span></a>
+    <nav><a href="index.html">Beranda</a><a href="#daftar-wisata">Wisata</a></nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">JELAJAHI MALANG RAYA</p>
+      <h1>Temukan tempat seru untuk <span>didatangi.</span></h1>
+      <p>Inspirasi tempat wisata, jalan-jalan, dan aktivitas menarik di sekitar Malang.</p>
+      <a class="button" href="#daftar-wisata">Jelajahi wisata</a>
+    </section>
+
+    <section class="content-section" id="daftar-wisata">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">PILIH DESTINASIMU</p>
+          <h2>Wisata pilihan</h2>
+        </div> 
+        <span id="jumlah-wisata" class="muted"></span>
+      </div>
+
+      <div class="filters">
+        <input id="search-wisata" type="search" placeholder="Cari nama atau lokasi wisata...">
+        <select id="filter-kategori" aria-label="Filter kategori">
+          <option value="semua">Semua kategori</option>
+          <option value="Kota">Kota</option>
+          <option value="Taman Rekreasi">Taman rekreasi</option>
+          <option value="Pantai">Pantai</option>
+          <option value="Alam">Alam</option>
+        </select>
+      </div>
+
+      <div id="daftar-kartu" class="tour-grid" aria-live="polite"></div>
+      <p id="pesan-kosong" class="empty-state" hidden>
+        Wisata tidak ditemukan. Coba kata kunci lain.
+      </p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="tahun"></span> AmanDolanan · Jelajahi dengan bijak.</p>
+  </footer>
+</body>
+</html>
