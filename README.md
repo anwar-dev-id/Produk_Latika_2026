@@ -1,4 +1,4 @@
-AmanDolanan — Jelajah Malang Raya
+# AmanDolanan — Jelajah Malang Raya
 
 AmanDolanan adalah website interaktif untuk menjelajahi rekomendasi tempat berkegiatan di wilayah Malang Raya, meliputi Kota Malang, Kabupaten Malang, dan Kota Batu. Website ini membantu pengguna menemukan taman, tempat olahraga, ruang belajar, dan tempat berkegiatan komunitas.
 
@@ -40,14 +40,6 @@ Web Storage API ("localStorage")| Menyimpan data tempat dan favorit secara lokal
 Google Maps| Membuka pencarian lokasi tempat dari website.
 
 Website menggunakan HTML, CSS, dan JavaScript tanpa framework frontend utama. Leaflet dimuat melalui CDN, sehingga koneksi internet diperlukan untuk memuat pustaka dan peta.
-
-📁 Struktur Proyek
-
-AmanDolan/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
 
 🚀 Cara Menjalankan Website
 
@@ -129,38 +121,23 @@ Contoh prompt untuk memperbaiki tampilan
 
 «Perbaiki tampilan responsif website AmanDolanan agar nyaman digunakan pada ponsel, tablet, dan komputer. Pertahankan fitur peta Leaflet, pencarian, filter, favorit, serta formulir tambah tempat. Berikan perubahan kode yang jelas dan jelaskan bagian yang diubah.»
 
-🧪 Pengujian
+Penyesuaian Mandiri Siswa terhadap Respons AI
 
-Sebelum website digunakan, lakukan pengujian berikut:
+Pada proses pembuatan website AmanDolanan, AI memberikan solusi awal berupa penampilan nama lokasi pada daftar tempat wisata. Namun, fitur tersebut belum sepenuhnya memenuhi kebutuhan website.
 
-- [ ] Halaman utama dapat dibuka.
-- [ ] Peta dan penanda lokasi dapat ditampilkan saat koneksi tersedia.
-- [ ] Pencarian dan filter wilayah berfungsi.
-- [ ] Filter kategori berfungsi.
-- [ ] Favorit dapat ditambah, dihapus, dan dimuat kembali.
-- [ ] Formulir tambah tempat dapat digunakan.
-- [ ] Data tempat dan favorit tetap tersedia setelah halaman dimuat ulang pada browser yang sama.
-- [ ] Tampilan dapat digunakan pada perangkat seluler dan desktop.
-- [ ] Alamat dan informasi tempat diperiksa kembali.
+Siswa kemudian melakukan penyesuaian dan pengembangan kode secara mandiri agar lokasi yang ditampilkan dapat diakses melalui Google Maps. Penyesuaian dilakukan dengan menambahkan tautan lokasi berdasarkan informasi tempat yang tersedia, sehingga pengguna dapat mengeklik nama atau tombol lokasi untuk membuka pencarian tempat di Google Maps.
 
-⚠️ Batasan
+Bentuk penyesuaian yang dilakukan:
 
-- Data tempat merupakan data awal demonstrasi dan perlu diverifikasi.
-- Peta dan pustaka eksternal memerlukan koneksi internet.
-- Data tempat dan favorit tersimpan secara lokal, bukan di server bersama.
-- Website belum menyediakan sinkronisasi data antarperangkat melalui backend.
+- Meninjau kembali solusi awal yang diberikan AI.
+- Menyesuaikan kode HTML dan JavaScript agar lokasi dapat diklik.
+- Menambahkan tautan menuju Google Maps berdasarkan nama atau informasi lokasi.
+- Menguji tautan untuk memastikan pengguna dapat membuka Google Maps.
 
-📌 Pengembangan Selanjutnya
+Peran AI: Memberikan opsi solusi dan bantuan pengembangan kode.
 
-- Memvalidasi koordinat dan informasi tempat berdasarkan sumber tepercaya.
-- Menambahkan informasi fasilitas dan jam operasional yang telah diverifikasi.
-- Mengembangkan backend dan database jika dibutuhkan.
-- Menambahkan pengujian lebih lanjut pada perangkat dan browser berbeda.
+Peran siswa: Mengevaluasi respons AI, menentukan penyesuaian yang dibutuhkan, mengubah kode secara mandiri, dan menguji hasilnya.
 
-👨‍💻 Repository
+Hasil: Website tidak hanya menampilkan nama tempat, tetapi juga menyediakan akses menuju Google Maps agar pengguna lebih mudah mencari lokasi tujuan.
 
-Kode sumber: https://github.com/naufalazmi210-max/AmanDolan
-
----
-
-Dokumentasi ini disusun berdasarkan struktur dan fitur yang terlihat pada repository. Model AI dan prompt yang dicantumkan sebagai contoh tidak dimaksudkan sebagai catatan historis yang persis.
+Proyek ini dikembangkan oleh Muhammad Abdul Anwar dan Naufal, kaduanya berasal dari SMAN 1 DAMPIT, kelas XI dengan kelas peminatan informatika tingkat lanjut.
